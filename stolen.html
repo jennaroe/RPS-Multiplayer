@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RPS</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="assets/js/game.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="jumbotron bigBlack">
+  				<h1 class="text-center">Rock Paper Scissors</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 info">
+    			<div class="input-group userName">
+      				<span class="input-group-btn">
+        				<button class="btn btn-default signIn" type="button">Sign In</button>
+      				</span>
+      				<input type="text" class="form-control userId" placeholder="name...">
+    			</div>
+  			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="panel panel-primary">
+  					<div class="panel-heading">
+    					<h3 class="panel-title player names"></h3>
+  					</div>
+  					<div class="panel-body window">
+  						<div class="playerStuff">
+  							
+						</div>
+						<h4 class="playerResults score"></h4>
+  					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="panel panel-primary">
+  					<div class="panel-heading">
+    					<h3 class="panel-title names"></h3>
+  					</div>
+  					<div class="panel-body window results">
+  						
+  					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="panel panel-primary">
+  					<div class="panel-heading">
+    					<h3 class="panel-title player2 names"></h3>
+  					</div>
+  					<div class="panel-body window">
+  						<div class="oppStuff">
+  							
+						</div>
+						<h4 class="oppResults score"></h4>
+  					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="well well-lg chatBox"></div>
+  				<div class="input-group">
+      				<input type="text" class="form-control messege" placeholder="chat...">
+      				<span class="input-group-btn">
+        				<button class="btn btn-default send" type="button">Send</button>
+      				</span>
+    			</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

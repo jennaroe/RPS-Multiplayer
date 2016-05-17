@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive RPS</title>
+
+    <!-- reset css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!-- Bootstrap File -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <!-- Java Script -->
+    <script src="assets/javascript/app.js"></script>
+    <!-- firebase -->
+    <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <header class="col-lg-12">
+            <h1>Rock Paper Scissors</h1>
+            </header>
+        </div>
+
+
+            <div class "col-sm-12"><center><form id="player-form">
+        <!-- <label for="playerinput"> Name </label> -->
+            <input type="text" id="playerinput" placeholder="Name"><br>
+        
+        <!-- Button triggers new player to be added -->
+             <input class="btn btn-info" id="addPlayer" type="submit" value="Start">
+             </form></center></div>
+
+        
+    <div class="row">
+        <!-- player 1 info -->
+        <div class="col-lg-3"> 
+            <div class="player1">
+                <p>Waiting for Player 1</p></div>
+
+            <div id="rpsButtons"></div>
+            <div id="scores1"></div>
+        
+        </div>
+
+
+        <!-- scorebox will be shown here -->
+        <div class="col-lg-3">
+            <div id="scoreBox"></div>
+        </div>
+
+
+        <!-- Player 2 Info -->
+        <div class="col-lg-3"> 
+            <div class="player2">
+                <p>Waiting for Player 1</p></div>
+
+                <div id="rpsButtons"></div>
+                <div id="scores2"></div>
+        
+        </div>
+    </div>
+
+
+    <div class="row">
+            <form class="col-sm-12">
+                <textarea class="form-control" rows="3"></textarea>
+                <button type="submit" class="btn btn-default submit">Submit</button>
+            </form>
+        </div>
+
+    </div>
+
+   
+
+</body>
+</html>
