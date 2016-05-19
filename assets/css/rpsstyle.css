@@ -1,0 +1,36 @@
+body{
+	background-color: #66ffcc;
+	align-content: center;
+}
+
+header{
+	background-color: #e6fff7;
+	text-align: center;
+	margin-bottom: 2%;
+}
+form{
+	margin:2%;
+}
+
+#player1, #player2, #scoreBox {
+	border:dotted;
+	border-width: 1px;
+	width:100%;
+	
+	height: 250px;
+	text-align: center;
+}
+.jumbotron {
+	text-align: center;
+}
+
+.rps{
+	text-align: center !important;
+}
+
+.rpsButtons{
+	width:100px;
+	margin-left: 36%;
+	margin-top: 5%;
+	margin-bottom:5%;
+}
