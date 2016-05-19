@@ -1,4 +1,3 @@
-
 $( document ).ready(function() {
    
 var dataRef = new Firebase("https://rpsactive.firebaseio.com/");
@@ -24,7 +23,6 @@ var dataRef = new Firebase("https://rpsactive.firebaseio.com/");
             var exists = snapshot.child(players).exists();
             var full = snapshot.child(players).child('2').exists();
             assignPlayer(player, dataRef, exists, full);
-
         });
 
         return false;
@@ -36,7 +34,7 @@ var playerNum;
   if(exists && !full){
     var playersRef = dataRef.child(players)
     var player2Ref = playersRef.child(player2);
-    $('player2').empty;
+    
     player2Ref.onDisconnect().remove();
     renderButtons();
     console.log(player2Ref);
@@ -49,21 +47,23 @@ var playerNum;
   }
   else if(full){
     alert('The game is full, try again later');
-    $('#player-form').empty();
+    $('#playerinput').empty();
   }
    else{ 
     var playersRef = dataRef.child(players);
     var player1Ref = playersRef.child(player1);
-    console.log(player1Ref);
+    
     player1Ref.onDisconnect().remove();
     renderButtons();
+    console.log(player1Ref);
+
       player1Ref.set({
         player: player, 
         wins: wins, 
         losses: losses
         });
 
-    }
+    };
 };
 
 
@@ -102,7 +102,6 @@ var playerNum;
       };
     };
     renderButtons();
-});
 
-  
-  
+
+});
