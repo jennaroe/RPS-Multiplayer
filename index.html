@@ -22,13 +22,13 @@
 <body>
     <div class="container">
         <div class="row">
-            <header class="col-lg-12">
+            <div class="jumbotron">
             <h1>Rock Paper Scissors</h1>
-            </header>
+            </div>
         </div>
 
 
-            <div class "col-sm-12"><center><form id="player-form">
+            <div class "col-sm-12" id="gameText"><center><form id="player-form">
         <!-- <label for="playerinput"> Name </label> -->
             <input type="text" id="playerinput" placeholder="Name"><br>
         
@@ -39,30 +39,30 @@
         
     <div class="row">
         <!-- player 1 info -->
-        <div class="col-lg-3"> 
-            <div class="player1">
-                <p>Waiting for Player 1</p></div>
+        <div class="col-md-4"> 
+            <div id="player1">
+                <p>Player 1</p>
 
-            <div id="rpsButtons"></div>
-            <div id="scores1"></div>
-        
+                <div class="rpsButtons"></div>
+                <div id="scores1"></div>
+            </div>
         </div>
 
 
         <!-- scorebox will be shown here -->
-        <div class="col-lg-3">
+        <div class="col-md-4">
             <div id="scoreBox"></div>
         </div>
 
 
         <!-- Player 2 Info -->
-        <div class="col-lg-3"> 
-            <div class="player2">
-                <p>Waiting for Player 1</p></div>
+        <div class="col-md-4"> 
+            <div id="player2">
+                <p>Player 2</p>
 
-                <div id="rpsButtons"></div>
+                <div class="rpsButtons"></div>
                 <div id="scores2"></div>
-        
+            </div>
         </div>
     </div>
 

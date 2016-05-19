@@ -1,4 +1,4 @@
-/*body{
+body{
 	background-color: #66ffcc;
 	align-content: center;
 }
@@ -12,58 +12,25 @@ form{
 	margin:2%;
 }
 
-.player1, .player2, #scoreBox {
+#player1, #player2, #scoreBox {
 	border:dotted;
-	border-width: .5px;
-	margin: 4%;
-	height: 10%;
-}*/
-
-.bigBlack{
-	background-color: black;
-	color: white;
-}
-.info{
-	text-align:center;
-}
-.userName{
-	width:33%;
-	position:relative;
-	left:33.3%;
-	bottom: 15px;
-
-}
-.names{
-	height:25px;
-	padding-top:5px;
-	text-align: center;
-	font-size:18px;
-}
-.submit{
-	position:absolute;
-	right:1%;
-}
-.window{
-	height:250px;
+	border-width: 1px;
+	width:100%;
+	
+	height: 250px;
 	text-align: center;
 }
-.score{
-	position:absolute;
-	bottom:20px;
-	width:85%;
+.jumbotron {
+	text-align: center;
 }
-img{
- 	width:90%;
- 	height:225px;
 
- }
- .rps{
- 	margin-top:40px;
- }
- .chatBox{
- 	height:150px;
- 	overflow:auto;
- }
- .time{
- 	float:right;
- }
+.rps{
+	text-align: center !important;
+}
+
+.rpsButtons{
+	width:100px;
+	margin-left: 36%;
+	margin-top: 5%;
+	margin-bottom:5%;
+}
